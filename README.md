@@ -17,7 +17,6 @@ I've contributed to various open-source projects and enjoy collaborating with de
 - 📩 Let's connect!
 - ✉️ You can reach me at odidihope@gmail.com
 - ⚡ Ask me about React.js, Node.js, Express.js, MongoDB, API development, and best coding practices! <br/>
-- ![](https://komarev.com/ghpvc/?username=Daggahh&color=red)
 
 ## 🏆Github Trophy
 [![trophy](https://github-profile-trophy.vercel.app/?username=Daggahh&theme=dracula)](https://github.com/Daggahh/github-profile-trophy)
@@ -26,6 +25,3 @@ I've contributed to various open-source projects and enjoy collaborating with de
 ![Daggahh's GitHub stats](https://github-readme-stats.vercel.app/api?username=Daggahh&show_icons=true&theme=chartreuse-dark) 
 <br/> 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Daggahh&layout=donut)](https://github.com/Daggahh/github-readme-stats)
-
-## 🔥Streaks
-<img alt="My github streak, reload to view" src="https://github-readme-streak-stats.herokuapp.com/?user=Daggahh&theme=youtube-dark"> 
