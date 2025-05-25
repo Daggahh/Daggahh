@@ -18,10 +18,12 @@ I've contributed to various open-source projects and enjoy collaborating with de
 - ✉️ You can reach me at odidihope@gmail.com
 - ⚡ Ask me about React.js, Node.js, Express.js, MongoDB, API development, and best coding practices! <br/>
 
-## 🏆Github Trophy
+## 🏆 GitHub Trophy
 [![trophy](https://github-profile-trophy.vercel.app/?username=Daggahh&theme=dracula)](https://github.com/Daggahh/github-profile-trophy)
 
-## Github Stats
-![Daggahh's GitHub stats](https://github-readme-stats.vercel.app/api?username=Daggahh&show_icons=true&theme=chartreuse-dark) 
-<br/> 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Daggahh&layout=donut)](https://github.com/Daggahh/github-readme-stats)
+## 📊 GitHub Stats
+![Daggahh's GitHub stats](https://github-readme-stats.vercel.app/api?username=Daggahh&show_icons=true&theme=chartreuse-dark&count_private=true&include_all_commits=true&cache_seconds=3600)
+<br/>
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Daggahh&layout=donut&theme=chartreuse-dark)](https://github.com/Daggahh/github-readme-stats)
+
