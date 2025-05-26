@@ -22,8 +22,4 @@ I've contributed to various open-source projects and enjoy collaborating with de
 [![trophy](https://github-profile-trophy.vercel.app/?username=Daggahh&theme=dracula)](https://github.com/Daggahh/github-profile-trophy)
 
 ## 📊 GitHub Stats
-![Daggahh's GitHub stats](https://daggahh-readme-stats.vercel.app/api?username=Daggahh&show_icons=true&theme=chartreuse-dark&count_private=true&include_all_commits=true&cache_seconds=3600)
-
-<br/>
-
-[![Top Languages](https://daggahh-readme-stats.vercel.app/api/top-langs/?username=Daggahh&layout=donut&theme=chartreuse-dark)](https://github.com/Daggahh/github-readme-stats)
+![Awesome GitHub Stats](https://awesome-github-stats.azurewebsites.net/user-stats/Daggahh?cardType=github&theme=dark) [![Top Languages](https://daggahh-readme-stats.vercel.app/api/top-langs/?username=Daggahh&layout=donut&theme=chartreuse-dark)](https://github.com/Daggahh/github-readme-stats)
