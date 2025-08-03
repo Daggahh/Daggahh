@@ -1,6 +1,6 @@
 # <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hello, I'm Odidi(Daggahh𒉭)
 ## 👾 Software Developer
-I'm a Software Engineer with expertise in building scalable, secure, and high-performance applications. I specialize in JavaScript, TypeScript, and React.js for frontend development and Node.js, Express.js, and MongoDB for backend development. With a strong focus on API design, microservices, and full-stack web applications, I love creating efficient and maintainable solutions.
+I'm a Software Engineer with expertise in building scalable, secure, and high-performance applications. I specialize in using modern framework like nextjs and React.js for frontend development and Node.js, Express.js, and MongoDB for backend development. With a strong focus on API design, microservices, and full-stack web applications, I love creating efficient and maintainable solutions.
 
 I've contributed to various open-source projects and enjoy collaborating with developers to build impactful software. My work revolves around crafting robust, responsive, and user-friendly applications while staying up to date with the latest industry trends.
 
