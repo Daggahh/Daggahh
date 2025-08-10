@@ -1,25 +1,47 @@
-# <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hello, I'm Odidi(Daggahh𒉭)
-## 👾 Software Developer
-I'm a Software Engineer with expertise in building scalable, secure, and high-performance applications. I specialize in using modern framework like nextjs and React.js for frontend development and Node.js, Express.js, and MongoDB for backend development. With a strong focus on API design, microservices, and full-stack web applications, I love creating efficient and maintainable solutions.
+# Daggahh𒉭  
+**Full-Stack Software Engineer | MERN & PERN Specialist**
 
-I've contributed to various open-source projects and enjoy collaborating with developers to build impactful software. My work revolves around crafting robust, responsive, and user-friendly applications while staying up to date with the latest industry trends.
+I build **secure, scalable, and high-performance applications** — from intuitive, responsive frontends to resilient backend services.  
+My focus is on **API design, microservices, and full-stack architectures** that are efficient, maintainable, and future-ready.  
+I work across the **MERN** (MongoDB, Express.js, React, Node.js) and **PERN** (PostgreSQL, Express.js, React, Node.js) stacks, plus modern cloud, DevOps, and performance optimization workflows.
 
-🚀 What I'm up to:
-- Currently working on building scalable backend systems and modern frontend interfaces
-- Expanding my knowledge in software architecture, design patterns, and cloud technologies
-- Open to collaborating on full-stack projects, APIs, and microservices
+---
 
-🛠️ Tech Stack:
-- Frontend- <br/> ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Ant-Design](https://img.shields.io/badge/-AntDesign-%230170FE?style=for-the-badge&logo=ant-design&logoColor=white)
-- Backend- <br/> ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
-- Other Tools & Technologies- <br/> ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![openapi initiative](https://img.shields.io/badge/openapiinitiative-%23000000.svg?style=for-the-badge&logo=openapiinitiative&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white) ![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white)	![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+## 𒉭 Current Focus
+- Architecting **cloud-ready systems** with Node.js, Express.js, PostgreSQL, and MongoDB  
+- Building **modern, accessible interfaces** with Next.js, React, Tailwind CSS, and ShadCN/UI  
+- Leveraging **Redis, Supabase, and Medusa.js** for performance and e-commerce solutions  
+- Exploring **design patterns, software architecture, and serverless workflows**  
+- Contributing to **open-source** and collaborative full-stack projects  
 
-- 📩 Let's connect!
-- ✉️ You can reach me at odidihope@gmail.com
-- ⚡ Ask me about React.js, Node.js, Express.js, MongoDB, API development, and best coding practices! <br/>
+---
 
-## 🏆 GitHub Trophy
-[![trophy](https://github-profile-trophy.vercel.app/?username=Daggahh&theme=dracula)](https://github.com/Daggahh/github-profile-trophy)
+## 𒉭 Tech Stack
 
-## 📊 GitHub Stats
+**Frontend:**  
+Next.js, React.js, TypeScript, Tailwind CSS, Styled Components, Ant Design, ShadCN/UI, Framer Motion, GSAP, React Native  
+
+**Backend & Databases:**  
+Node.js, Express.js, PostgreSQL, Supabase, MongoDB, Mongoose, Prisma ORM, Medusa.js, REST & GraphQL APIs  
+
+**Cloud & DevOps:**  
+AWS (EC2, S3, Lambda basics), GCP (App Engine, Cloud Storage), Azure fundamentals, Vercel, Render, Netlify, Docker, GitHub Actions, GitLab CI/CD, Railway  
+
+**Performance & Infrastructure:**  
+Redis, IndexedDB (Dexie.js), Elasticsearch (intro), OpenAPI, JWT, NextAuth.js, Google OAuth, Sentry, Winston  
+
+**Testing & Quality:**  
+Jest, React Testing Library, Lighthouse, Web Vitals, SEO optimization  
+
+**Design & UI Implementation:**  
+Figma-to-code workflows, Responsive design, Component architecture, Accessible design systems  
+
+---
+
+## 𒉭 Connect
+📧 **odidihope@gmail.com**  
+
+---
+
+## 𒉭 GitHub Stats  
 ![Awesome GitHub Stats](https://awesome-github-stats.azurewebsites.net/user-stats/Daggahh?cardType=github&theme=dark) [![Top Languages](https://daggahh-readme-stats.vercel.app/api/top-langs/?username=Daggahh&layout=donut&theme=chartreuse-dark)](https://github.com/Daggahh/github-readme-stats)
