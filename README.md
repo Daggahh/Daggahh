@@ -9,7 +9,7 @@ I work across the **MERN** (MongoDB, Express.js, React, Node.js) and **PERN** (P
 
 ## 𒉭 Current Focus
 - Architecting **cloud-ready systems** with Node.js, Express.js, PostgreSQL, and MongoDB  
-- Building **modern, accessible interfaces** with Next.js, React, Tailwind CSS, and ShadCN/UI  
+- Building **modern, accessible interfaces** with Next.js, React, Tailwind CSS, AntD and ShadCN/UI  
 - Leveraging **Redis, Supabase, and Medusa.js** for performance and e-commerce solutions  
 - Exploring **design patterns, software architecture, and serverless workflows**  
 - Contributing to **open-source** and collaborative full-stack projects  
