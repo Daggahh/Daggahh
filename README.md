@@ -25,7 +25,7 @@ Next.js, React.js, TypeScript, Tailwind CSS, Styled Components, Ant Design, Shad
 Node.js, Express.js, PostgreSQL, Supabase, MongoDB, Mongoose, Prisma ORM, Medusa.js, REST & GraphQL APIs  
 
 **Cloud & DevOps:**  
-AWS (EC2, S3, Lambda basics), GCP (App Engine, Cloud Storage), Azure fundamentals, Vercel, Render, Netlify, Docker, GitHub Actions, GitLab CI/CD, Railway  
+AWS (EC2, S3, Lambda basics), GCP (App Engine, Cloud Storage), Vercel, Render, Netlify, Docker, GitHub Actions, GitLab CI/CD, Railway  
 
 **Performance & Infrastructure:**  
 Redis, IndexedDB (Dexie.js), Elasticsearch (intro), OpenAPI, JWT, NextAuth.js, Google OAuth, Sentry, Winston  
