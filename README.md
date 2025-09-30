@@ -34,7 +34,7 @@ Redis, IndexedDB (Dexie.js), Elasticsearch (intro), OpenAPI, JWT, NextAuth.js, G
 Jest, React Testing Library, Lighthouse, Web Vitals, SEO optimization  
 
 **Design & UI Implementation:**  
-Figma-to-code workflows, Responsive design, Component architecture, Accessible design systems  
+Figma-to-code workflows, Responsive design, Component architecture, Accessible design systems. 
 
 ---
 
