@@ -44,4 +44,4 @@ Figma-to-code workflows, Responsive design, Component architecture, Accessible d
 ---
 
 ## 𒉭 GitHub Stats  
-![Awesome GitHub Stats](https://awesome-github-stats.azurewebsites.net/user-stats/Daggahh?cardType=github&theme=dark) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Daggahh&layout=compact&theme=vision-friendly-dark)
+![Awesome GitHub Stats](https://awesome-github-stats.azurewebsites.net/user-stats/Daggahh?cardType=github&theme=dark) ![Top Langs](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Daggahh&layout=compact&theme=vision-friendly-dark)
