@@ -141,15 +141,16 @@ function peaks(weeks) {
 // 5. garden: each week grows a stem, busy weeks grow tall and bloom, everything sways
 const GARDEN = {
   dark: { bg: "#0d1117", border: "#21262d", sky: "#484f58", stem: "#30363d", hi: "#c9d1d9", lo: "#6e7681", core: "#f0f6fc", bud: "#545d68", ground: "#30363d" },
-  // daytime: a soft sun instead of stars, ink-grey stems on white
-  light: { bg: "#ffffff", border: "#d1d9e0", sky: null, stem: "#afb8c1", hi: "#57606a", lo: "#8c959f", core: "#ffffff", bud: "#8c959f", ground: "#d1d9e0" },
+  // daytime: green stems, pastel blooms, warm centres, a pale sun
+  light: { bg: "#ffffff", border: "#d1d9e0", sky: null, stem: "#8fbf7f", core: "#f2b33d", bud: "#a8d08d", ground: "#cfe3c3",
+    petals: ["#f4a6b8", "#f7c873", "#b9a7f0", "#f59e8b", "#8ec5f0", "#f2a7e0"], sun: ["#fff6d6", "#fde58a"] },
 };
 function garden(weeks, theme = "dark") {
   const C = GARDEN[theme];
   seed = 53; const tot = weeks.map((w) => w.reduce((a, b) => a + b, 0)); const max = Math.max(1, ...tot);
   const ground = H - 20, bw = (W - PAD * 2) / weeks.length;
   let out = Array.from({ length: 45 }, () => `<circle class="t" cx="${r2(rand() * W)}" cy="${r2(rand() * 70)}" r="${r2(0.4 + rand() * 0.5)}" fill="${C.sky}" style="animation-delay:${r2(rand() * 5)}s"/>`).join("");
-  if (!C.sky) out = `<circle cx="150" cy="36" r="24" fill="#f6f8fa"/><circle cx="150" cy="36" r="13" fill="#eaeef2" stroke="#d1d9e0"/>`;
+  if (!C.sky) out = `<circle class="glow" cx="150" cy="36" r="24" fill="${C.sun[0]}"/><circle cx="150" cy="36" r="13" fill="${C.sun[1]}"/>`;
   tot.forEach((t, i) => {
     const k = t / max, x = PAD + i * bw + bw / 2, h = 6 + Math.sqrt(k) * (ground - 46), y = ground - h;
     const bend = (rand() - 0.5) * 10;
@@ -158,14 +159,15 @@ function garden(weeks, theme = "dark") {
     if (h > 26) g += `<path d="M${r2(x + bend * 0.3)},${r2(ground - h * 0.4)} q${r2(5 * (bend > 0 ? -1 : 1))},-4 ${r2(7 * (bend > 0 ? -1 : 1))},-1" fill="none" stroke="${C.stem}" stroke-width="1"/>`;
     if (k > 0.2) {
       const pr = 1.5 + k * 3.2, fx = x + bend / 2;
-      g += [0, 72, 144, 216, 288].map((a) => `<circle cx="${r2(fx + Math.cos(a * Math.PI / 180) * pr)}" cy="${r2(y + Math.sin(a * Math.PI / 180) * pr)}" r="${r2(pr * 0.7)}" fill="${k > 0.6 ? C.hi : C.lo}" opacity=".85"/>`).join("");
+      g += [0, 72, 144, 216, 288].map((a) => `<circle cx="${r2(fx + Math.cos(a * Math.PI / 180) * pr)}" cy="${r2(y + Math.sin(a * Math.PI / 180) * pr)}" r="${r2(pr * 0.7)}" fill="${C.petals ? C.petals[(i * 5) % C.petals.length] : k > 0.6 ? C.hi : C.lo}" opacity="${C.petals ? 0.95 : 0.85}"/>`).join("");
       g += `<circle cx="${r2(fx)}" cy="${r2(y)}" r="${r2(pr * 0.45)}" fill="${C.core}"/>`;
     } else if (t) g += `<circle cx="${r2(x + bend / 2)}" cy="${r2(y)}" r="1.4" fill="${C.bud}"/>`;
     out += `<g class="s" ${sway}>${g}</g>`;
   });
   out += `<line x1="0" x2="${W}" y1="${ground}" y2="${ground}" stroke="${C.ground}"/>`;
   return frame(out, `.t{animation:tw 4s ease-in-out infinite}@keyframes tw{50%{opacity:.2}}
-.s{animation:sw ease-in-out infinite alternate}@keyframes sw{from{transform:rotate(-2.5deg)}to{transform:rotate(2.5deg)}}`, C.bg, C.border);
+.s{animation:sw ease-in-out infinite alternate}@keyframes sw{from{transform:rotate(-2.5deg)}to{transform:rotate(2.5deg)}}
+.glow{transform-origin:150px 36px;animation:gl 5s ease-in-out infinite}@keyframes gl{50%{transform:scale(1.15);opacity:.7}}`, C.bg, C.border);
 }
 const gardenLight = (weeks) => garden(weeks, "light");
 
