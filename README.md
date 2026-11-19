@@ -72,7 +72,11 @@ most of it is python and typescript. lately, a lot of it is AI.
 
 <br />
 
-<img width="100%" alt="a year of contributions as a constellation" src="https://raw.githubusercontent.com/Daggahh/Daggahh/output/constellation.svg" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Daggahh/Daggahh/output/constellation.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Daggahh/Daggahh/output/garden-light.svg" />
+  <img width="100%" alt="a year of contributions" src="https://raw.githubusercontent.com/Daggahh/Daggahh/output/garden-light.svg" />
+</picture>
 
 <details>
 <summary><sub>the long list, if you're into that</sub></summary>

@@ -28,9 +28,9 @@ let seed = 1337;
 const rand = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
 const r2 = (n) => Math.round(n * 100) / 100;
 
-const frame = (inner, style = "") => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+const frame = (inner, style = "", bg = "#0d1117", border = "#21262d") => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
 <style>${style}</style>
-<rect width="${W}" height="${H}" rx="12" fill="#0d1117" stroke="#21262d"/>
+<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="12" fill="${bg}" stroke="${border}"/>
 ${inner}
 </svg>`;
 
@@ -139,31 +139,39 @@ function peaks(weeks) {
 }
 
 // 5. garden: each week grows a stem, busy weeks grow tall and bloom, everything sways
-function garden(weeks) {
+const GARDEN = {
+  dark: { bg: "#0d1117", border: "#21262d", sky: "#484f58", stem: "#30363d", hi: "#c9d1d9", lo: "#6e7681", core: "#f0f6fc", bud: "#545d68", ground: "#30363d" },
+  // daytime: a soft sun instead of stars, ink-grey stems on white
+  light: { bg: "#ffffff", border: "#d1d9e0", sky: null, stem: "#afb8c1", hi: "#57606a", lo: "#8c959f", core: "#ffffff", bud: "#8c959f", ground: "#d1d9e0" },
+};
+function garden(weeks, theme = "dark") {
+  const C = GARDEN[theme];
   seed = 53; const tot = weeks.map((w) => w.reduce((a, b) => a + b, 0)); const max = Math.max(1, ...tot);
   const ground = H - 20, bw = (W - PAD * 2) / weeks.length;
-  let out = Array.from({ length: 45 }, () => `<circle class="t" cx="${r2(rand() * W)}" cy="${r2(rand() * 70)}" r="${r2(0.4 + rand() * 0.5)}" fill="#484f58" style="animation-delay:${r2(rand() * 5)}s"/>`).join("");
+  let out = Array.from({ length: 45 }, () => `<circle class="t" cx="${r2(rand() * W)}" cy="${r2(rand() * 70)}" r="${r2(0.4 + rand() * 0.5)}" fill="${C.sky}" style="animation-delay:${r2(rand() * 5)}s"/>`).join("");
+  if (!C.sky) out = `<circle cx="150" cy="36" r="24" fill="#f6f8fa"/><circle cx="150" cy="36" r="13" fill="#eaeef2" stroke="#d1d9e0"/>`;
   tot.forEach((t, i) => {
     const k = t / max, x = PAD + i * bw + bw / 2, h = 6 + Math.sqrt(k) * (ground - 46), y = ground - h;
     const bend = (rand() - 0.5) * 10;
     const sway = `style="transform-origin:${r2(x)}px ${ground}px;animation-delay:-${r2(rand() * 5)}s;animation-duration:${r2(4 + rand() * 3)}s"`;
-    let g = `<path d="M${r2(x)},${ground} Q${r2(x + bend)},${r2(ground - h / 2)} ${r2(x + bend / 2)},${r2(y)}" fill="none" stroke="#30363d" stroke-width="1.1"/>`;
-    if (h > 26) g += `<path d="M${r2(x + bend * 0.3)},${r2(ground - h * 0.4)} q${r2(5 * (bend > 0 ? -1 : 1))},-4 ${r2(7 * (bend > 0 ? -1 : 1))},-1" fill="none" stroke="#30363d" stroke-width="1"/>`;
+    let g = `<path d="M${r2(x)},${ground} Q${r2(x + bend)},${r2(ground - h / 2)} ${r2(x + bend / 2)},${r2(y)}" fill="none" stroke="${C.stem}" stroke-width="1.1"/>`;
+    if (h > 26) g += `<path d="M${r2(x + bend * 0.3)},${r2(ground - h * 0.4)} q${r2(5 * (bend > 0 ? -1 : 1))},-4 ${r2(7 * (bend > 0 ? -1 : 1))},-1" fill="none" stroke="${C.stem}" stroke-width="1"/>`;
     if (k > 0.2) {
       const pr = 1.5 + k * 3.2, fx = x + bend / 2;
-      g += [0, 72, 144, 216, 288].map((a) => `<circle cx="${r2(fx + Math.cos(a * Math.PI / 180) * pr)}" cy="${r2(y + Math.sin(a * Math.PI / 180) * pr)}" r="${r2(pr * 0.7)}" fill="${k > 0.6 ? "#c9d1d9" : "#6e7681"}" opacity=".85"/>`).join("");
-      g += `<circle cx="${r2(fx)}" cy="${r2(y)}" r="${r2(pr * 0.45)}" fill="#f0f6fc"/>`;
-    } else if (t) g += `<circle cx="${r2(x + bend / 2)}" cy="${r2(y)}" r="1.4" fill="#545d68"/>`;
+      g += [0, 72, 144, 216, 288].map((a) => `<circle cx="${r2(fx + Math.cos(a * Math.PI / 180) * pr)}" cy="${r2(y + Math.sin(a * Math.PI / 180) * pr)}" r="${r2(pr * 0.7)}" fill="${k > 0.6 ? C.hi : C.lo}" opacity=".85"/>`).join("");
+      g += `<circle cx="${r2(fx)}" cy="${r2(y)}" r="${r2(pr * 0.45)}" fill="${C.core}"/>`;
+    } else if (t) g += `<circle cx="${r2(x + bend / 2)}" cy="${r2(y)}" r="1.4" fill="${C.bud}"/>`;
     out += `<g class="s" ${sway}>${g}</g>`;
   });
-  out += `<line x1="0" x2="${W}" y1="${ground}" y2="${ground}" stroke="#30363d"/>`;
+  out += `<line x1="0" x2="${W}" y1="${ground}" y2="${ground}" stroke="${C.ground}"/>`;
   return frame(out, `.t{animation:tw 4s ease-in-out infinite}@keyframes tw{50%{opacity:.2}}
-.s{animation:sw ease-in-out infinite alternate}@keyframes sw{from{transform:rotate(-2.5deg)}to{transform:rotate(2.5deg)}}`);
+.s{animation:sw ease-in-out infinite alternate}@keyframes sw{from{transform:rotate(-2.5deg)}to{transform:rotate(2.5deg)}}`, C.bg, C.border);
 }
+const gardenLight = (weeks) => garden(weeks, "light");
 
 const weeks = await loadDays();
 fs.mkdirSync(OUT, { recursive: true });
-for (const [name, fn] of Object.entries({ constellation, skyline, galaxy, peaks, garden })) {
+for (const [name, fn] of Object.entries({ constellation, skyline, galaxy, peaks, garden, "garden-light": gardenLight })) {
   fs.writeFileSync(path.join(OUT, `${name}.svg`), fn(weeks));
   console.log(name, (fs.statSync(path.join(OUT, `${name}.svg`)).size / 1024).toFixed(1) + "kb");
 }
